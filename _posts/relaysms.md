@@ -4,8 +4,8 @@ excerpt: "Lorem ipsum dolor sit amete et dolore magna aliqua. Praesent elemela f
 coverImage: "/assets/SWOB.png"
 date: "2024-03-20T05:35:07.322Z"
 author:
-  name: Afkanerd
-  picture: "/assets/SWOB.png"
+  name: swob
+  picture: "/assets/deku.png"
 ogImage:
   url: "/assets/SWOB.png"
 ---

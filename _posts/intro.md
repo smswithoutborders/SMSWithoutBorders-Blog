@@ -1,7 +1,7 @@
 ---
 title: "Learn about swob and its updates"
 excerpt: "Lorem ipsum dolor sit amete et dolore magna aliqua. Praesent elemela facilities morbi tempus."
-coverImage: "/assets/SWOB.png"
+coverImage: "/assets/index.jpeg"
 date: "2024-03-20T05:35:07.322Z"
 author:
   name: Afkanerd
