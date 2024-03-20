@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Updates About ${CMS_NAME}`,
+  description: `Everything the World needs to know about  ${CMS_NAME}.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -23,15 +23,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+        {/* <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        /> */}
+        {/* <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        /> */}
+     
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
         <link rel="shortcut icon" href="/assets/favicon.ico" />
-
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta
+          name="msapplication-config"
+          content="/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#000" />
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body className={inter.className}>
-
         <div className="min-h-screen">{children}</div>
-
         <Footer />
       </body>
     </html>

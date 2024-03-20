@@ -1,13 +1,13 @@
 ---
-title: "Relay sms"
-excerpt: "What to know about SWOB"
+title: "Learn about swob and its updates"
+excerpt: "Lorem ipsum dolor sit amete et dolore magna aliqua. Praesent elemela facilities morbi tempus."
 coverImage: "/assets/SWOB.png"
-date: "2020-03-16T05:35:07.322Z"
+date: "2024-03-20T05:35:07.322Z"
 author:
-  name: afkanerd
-  picture: "/assets/logo.png"
+  name: Afkanerd
+  picture: "/assets/SWOB.png"
 ogImage:
-  # url: "/assets/blog/preview/cover.jpg"
+  url: "/assets/SWOB.png"
 ---
 
 ### Stay connected With [SmsWithoutBorders](https://SmsWithoutBorders.com) SWOB

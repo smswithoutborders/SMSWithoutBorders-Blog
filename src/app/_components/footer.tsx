@@ -1,26 +1,26 @@
 import Container from "@/app/_components/container";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="bg-gray-900 text-white">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
+        <div className="py-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <img src="/assets/SWOB.png" alt="swob" className="h-10 lg:h-12 mb-4" />
+            <ul className="flex items-center space-x-4 mb-4">
+              <li><a href="https://github.com/smswithoutborders" className="hover:text-gray-300"><FontAwesomeIcon icon={faGithub} size="sm" />Github</a></li>
+              <li><a href="https://twitter.com/smswithoutborders" className="hover:text-gray-300"><FontAwesomeIcon icon={faTwitter} size="sm" /> Twitter</a></li>
+              <li><a href="https://linkedin.com/smswithoutborders" className="hover:text-gray-300"><FontAwesomeIcon icon={faLinkedin} size="sm" />LinkedIn</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg lg:text-xl font-bold mb-2">Read More About Swob</h3>
+            <ul>
+              <li><a href="https://smswithoutborders.com" className="btn">Swob</a></li>
+              <li><a href="https://deku.com" className="btn">Deku sms</a></li>
+            </ul>
           </div>
         </div>
       </Container>

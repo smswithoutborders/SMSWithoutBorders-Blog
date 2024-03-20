@@ -3,11 +3,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/" className="hover:underline">
-        <a>
-          <img src="/assets/logo.png" alt="Your Logo" className="h-10 md:h-12" />
-        </a>
-      </Link>
+         <img src="/assets/SWOB.png" alt="swob" className="h-10 lg:h-12 mb-4" />    
     </h2>
   );
 };
