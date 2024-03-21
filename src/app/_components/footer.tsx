@@ -1,27 +1,31 @@
 import Container from "@/app/_components/container";
 import { EXAMPLE_PATH } from "@/lib/constants";
-import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaXTwitter, FaGithub } from "react-icons/fa6";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="border-t text-white border-neutral-200 bg-gray-900">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+        <div className="py-10 flex flex-col lg:flex-row items-center">
+          <h3 className="text-3l font-bold leading-tight text-center py-5 lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             SMSWithoutBorders Blog
           </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              View on GitHub
-            </a>
-          
-          <FaFacebook size="25px" className="m-2"/>
-          <FaXTwitter size="25px" className="m-2" />
-            
+
+
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-3 lg:w-1/2">
+          <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
+          <FaFacebook size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white" />
+        </a>
+
+        <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"/>
+          </a>
+
+          <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
+          <FaGithub size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"/>
+          </a>
           </div>
+
         </div>
       </Container>
     </footer>

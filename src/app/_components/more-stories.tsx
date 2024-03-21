@@ -8,9 +8,6 @@ type Props = {
 export function MoreStories({ posts }: Props) {
   return (
     <section className="my-5 gap-y-5">
-      {/* <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        More Stories
-      </h2> */}
       <div className="my-5 md:w-2/4 mx-auto  lg:gap-x-35  mb-52">
         {posts.map((post) => (
           <PostPreview 
