@@ -1,29 +1,22 @@
 import { CMS_NAME } from "@/lib/constants";
-import Link from "next/link";
-
+import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 
 export function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-         <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white flex items-center justify-between p-4">
-      <div className="flex items-center">
-        <Link href="/">
-        
-            <img src="/assets/SWOB.png" alt="swob" className="h-10 lg:h-12 mr-2" />
-         
-        </Link>
-        <h3 className="text-lg font-bold">{CMS_NAME}</h3>
-      </div>
-      <div className="hidden md:block">
-        <Link href="/" className="ml-4">Home
-        </Link>
-        <Link href="/about" className="ml-4">About
-        </Link>
-
-        <Link href="/contact" className="ml-4">Contact
-        </Link>
-      </div>
-    </nav>
+    <section className="flex-col md:flex-row flex items-center md:justify-between mt-5 mb-16 md:mb-12">
+      <h6 className="text-2xl md:text-2xl font-bold tracking-tighter leading-tight md:pr-8">
+        SMSWithoutBorders
+      </h6>
+      <div className="flex">
+      <FaFacebook size="25px" className="m-2"/>
+          <FaXTwitter size="25px" className="m-2" />
+          <a
+              href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
+              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+            >
+              GitHub
+            </a>
+          </div>
     </section>
   );
 }

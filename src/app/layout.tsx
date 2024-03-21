@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Updates About ${CMS_NAME}`,
-  description: `Everything the World needs to know about  ${CMS_NAME}.`,
+  title: `SMSWithoutBorders Blog`,
+  description: `SMS Without Borders Official Blog Feed.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -23,20 +23,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
-     
-     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
-        <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <meta name="msapplication-config"  content="/favicon/browserconfig.xml" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/favicon.ico"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon.ico"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/ffavicon.ico"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#000000"
+        />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta
+          name="msapplication-config"
+          content="/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-
       <body className={inter.className}>
-
         <div className="min-h-screen">{children}</div>
-
         <Footer />
-        
       </body>
     </html>
   );
