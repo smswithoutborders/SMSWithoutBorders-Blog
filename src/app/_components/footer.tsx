@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Footer Logo */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <img src="./images/logo.png" alt="" className="logo-footer mb-4" />
+            <img src="/assets/SWOB.png" alt="SWOB" className="h-10 lg:h-12 mb-4" />
             <div className="footer-about">
-              <p>we code for the people</p>
+              <p>Relay Sms</p>
             </div>
           </div>
 
@@ -21,11 +21,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <h2 className="text-xl font-bold mb-4">Useful Links</h2>
             <ul className="use-links">
-              <li><a href="#hero"><i className="fa-solid fa-angles-right"></i> Home</a></li>
-              <li><a href="#about"><i className="fa-solid fa-angles-right"></i> About Us</a></li>
-              <li><a href="blog.html"><i className="fa-solid fa-angles-right"></i> Blog </a></li>
-              <li><a href="#projects"><i className="fa-solid fa-angles-right"></i> Projects</a></li>
-              <li><a href="#contact"><i className="fa-solid fa-angles-right"></i> Contact</a></li>
+              <li><a href="https://afkanerd.com"> Afkanard.com</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact"> Contact</a></li>
             </ul>
           </div>
 
@@ -33,13 +31,8 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <h2 className="text-xl font-bold mb-4">Follow Us</h2>
             <div className="social-icons">
-              {/* <li><a href="https://github.com/smswithoutborders" ><FontAwesomeIcon className='' icon={faGithub} size="xs" /> Github</a></li>
-              <li><a href=""><FontAwesomeIcon icon={faTwitter} size="xs" /> Twitter</a></li>
-              <li><a href=""><i className="fa-brands fa-linkedin-in"></i> Linkedin</a></li> */}
-
-              <li><a href="https://github.com/smswithoutborders" className="hover:text-gray-300">Github</a></li>
-               <li><a href="https://twitter.com/smswithoutborders" className="hover:text-gray-300">Twitter</a></li>   
-                         {/* <li><a href="https://linkedin.com/smswithoutborders" className="hover:text-gray-300"><FontAwesomeIcon icon={faLinkedin} size="xs" />LinkedIn</a></li> */}
+              <li><a href="https://github.com/smswithoutborders" className="hover:text-blue-300"><FontAwesomeIcon className="h-10 lg:h-8 mb-4" icon={faGithub} size="xs" /></a></li>
+              <li><a  href="https://twitter.com/smswithoutborders" className="hover:text-blue-300"><FontAwesomeIcon className="h-10 lg:h-8 mb-4" icon={faTwitter} size="xs" /> </a></li>
             </div>
           </div>
 
@@ -47,9 +40,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <h2 className="text-xl font-bold mb-4">Address</h2>
             <div className="address-links">
-              <li className="address1"><i className="fa-solid fa-location-dot"></i> Bamenda Cameroon, Sonac Street</li>
-              <li><a href=""><i className="fa-solid fa-phone"></i> +237 650 393 369 </a></li>
-              <li><a href=""><i className="fa-solid fa-envelope"></i> info@Afkanerd.com</a></li>
+              <li className="address1"> Bamenda Cameroon, Sonac Street</li>
+              {/* <li><a href=""><i className="fa-solid fa-phone"></i> +237 650 393 369 </a></li> */}
+              <li><a href=""> info@Afkanerd.com</a></li>
             </div>
           </div>
         </div>
