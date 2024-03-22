@@ -1,13 +1,12 @@
 ---
-title: "Dynamic Routing and Static Generation"
+title: "Deku SMS security check"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/dynamic-routingz/cover.jpg"
-date: "2029-03-16T05:35:07.322Z"
+date: "2024-03-16T05:35:07.322Z"
 author:
-  name: afkanerd
-  picture: "/assets/swob.png"
+  name: Relay
+  picture: "/assets/blog/deku.png"
 ogImage:
-  url: "/assets/swob.png"
+  url: "/assets/blog/deku.png"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

@@ -11,10 +11,9 @@ export function MoreStories({ posts }: Props) {
       <div className="my-5 md:w-2/4 mx-auto  lg:gap-x-35  mb-52">
         {posts.map((post) => (
           <PostPreview 
-            className="my-5 gap-y-5 shadow-md p-5 mb-32"
+            className="my-5 gap-y-5 p-5 mb-32"
             key={post.slug}
             title={post.title}
-            coverImage={post.coverImage}
             date={post.date}
             author={post.author}
             slug={post.slug}

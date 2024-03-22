@@ -6,27 +6,23 @@ export function Footer() {
   return (
     <footer className="border-t text-white border-neutral-200 bg-gray-900">
       <Container>
-        <div className="py-10 flex flex-col lg:flex-row items-center">
+          <div className="flex flex-col lg:flex-row justify-start items-center lg:pl-3 lg:w-1/2">
           <h3 className="text-3l font-bold leading-tight text-center py-5 lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             SMSWithoutBorders Blog
           </h3>
-
-
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-3 lg:w-1/2">
           <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
-          <FaFacebook size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white" />
+          <FaFacebook size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-blue-400" />
         </a>
 
         <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
-          <FaXTwitter size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"/>
+          <FaXTwitter size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-blue-400"/>
           </a>
 
           <a href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts" target="_blank" rel="noopener noreferrer">
-          <FaGithub size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"/>
+          <FaGithub size="25px" className="m-2 mx-3 rounded hover:bg-white hover:blue text-blue-400"/>
           </a>
           </div>
 
-        </div>
       </Container>
     </footer>
   );

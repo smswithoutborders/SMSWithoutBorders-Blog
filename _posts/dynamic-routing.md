@@ -1,13 +1,12 @@
 ---
 title: "Anything relay sms"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/logo.png"
-date: "2029-03-16T05:35:07.322Z"
+excerpt: "What's New with Smswithoutborders(Relay Sms)"
+date: "2024-03-22T05:35:07.322Z"
 author:
   name: Relay
-  picture: "/assets/blog/authors/deku.png"
+  picture: "/assets/blog/deku.png"
 ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+  url: "/assets/blog/swob.png"
 ---
 
 ## RELAY
