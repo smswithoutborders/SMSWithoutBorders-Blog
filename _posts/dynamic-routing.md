@@ -1,14 +1,16 @@
 ---
-title: "Dynamic Routing and Static Generation"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/dynamic-routingz/cover.jpg"
+title: "Anything relay sms"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+coverImage: "/assets/blog/logo.png"
 date: "2029-03-16T05:35:07.322Z"
 author:
-  name: JJ Kasper
-  picture: "/assets/swob.png"
+  name: Relay
+  picture: "/assets/blog/authors/deku.png"
 ogImage:
-  url: "/assets/swob.png"
+  url: "/assets/blog/preview/cover.jpg"
 ---
+
+## RELAY
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 
