@@ -9,10 +9,34 @@ ogImage:
   url: "/assets/blog/deku.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+### Stay connected With [SmsWithoutBorders](https://SmsWithoutBorders.com) SWOB
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+We hardly know when we are going to find ourselves without an internet connection;
+Whether in an event, in school, traveling to a new place or migrating to a remote area, natural disaster, in a protest, etc.
 
-## Lorem Ipsum
+We are pleased to introduce SMSWithoutBorders(SWOB). SWOB is a messaging app developed by Afkanerd Technologies Ltd. It allows messages to be sent to online platforms such as Telegram, Gmail, and Twitter without an active internet connection.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Messages in SWOB are sent securely through a network of SMS gateways to stay connected. Users have to set up their SWOB accounts while connected to the internet, then continue communication later in a situation of bad internet connection.
+
+  <!--![picture](/index.jpeg)-->
+
+### SWOB has the following characteristics:
+
+- It is secure. SWOB uses hybrid encryption to provide a secure means of communication.
+- It is open source. Our code base is available on GitHub and is open to contributions from the public.
+- It does not collect any additional information other than the access granted by the user. SWOB does not share user information with third parties or use it for commercial purposes.
+- SWOB is a free tool available for download on Playstore and the app store.
+
+### Here are some steps to synchronize your SWOB account;
+
+![steps](/steps.jpg)
+
+<!---->
+
+#### To download SWOB, click on the link below:
+
+![](/)<https://play.google.com/store/apps/details?id=com.afkanerd.sw0b>
+
+<!---->
+
+![](/)<https://smswithoutborders.com>
