@@ -21,19 +21,27 @@ export function PostPreview({
   className,
 }: Props) {
   return (
-    <div className={`${className} shadow-2xl rounded-lg p-5`}> 
+    <div className={`${className} shadow-2xl rounded-lg`}>
       <h3 className="font-medium text-3xl mb-3 mx-4 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]" className="hover:underline text-bold">
+        <Link
+          as={`/posts/${slug}`}
+          href="/posts/[slug]"
+          className="hover:underline text-bold"
+        >
           {title}
         </Link>
       </h3>
       <div className="text-base mb-4 mx-3">
         <DateFormatter dateString={date} />
       </div>
-      
+
       <p className="text-base leading-relaxed mb-4 mx-4">{excerpt}</p>
       <p className="mb-3 mx-3 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]" className="decoration-blue-300 text-blue-500" >
+        <Link
+          as={`/posts/${slug}`}
+          href="/posts/[slug]"
+          className="decoration-blue-300 text-blue-500"
+        >
           Read more...
         </Link>
       </p>

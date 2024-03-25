@@ -2,7 +2,7 @@ import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/app/_components/footer";
+import Navbar from "@/app/_components/navbar";
 
 import "./globals.css";
 
@@ -26,7 +26,6 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        {/* <meta name="msapplication-TileColor" content="#000000" /> */}
         <meta
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
@@ -35,7 +34,7 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body className={inter.className}>
-        <Header />
+        <Navbar />
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
