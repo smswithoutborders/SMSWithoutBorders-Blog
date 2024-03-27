@@ -1,0 +1,42 @@
+name: 🚀 Deploy SMSWithoutBorders Blog on Server (staging)
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  deploy:
+    name: 🚀 Execute Deployment Script on Server
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 Execute Remote SSH Commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            set -e
+
+            echo "============================"
+            echo "🚀 Updating repository ..."
+            echo "============================"
+            cd major-build/staging-smswithoutborders/blog/
+            if ! git pull; then
+              echo "❌ Error updating repository!"
+              exit 1
+            fi
+            echo "==============================="
+            echo "✅ Repository update complete"
+            echo "==============================="
+
+            echo "========================="
+            echo "🚀 Building project ..."
+            echo "========================="
+            if ! docker compose --project-name=staging-smswithoutborders --env-file=.env up -d --build; then
+              echo "❌ Error building project!"
+              exit 1
+            fi
+            echo "==========================="
+            echo "✅ Project build complete"
+            echo "==========================="
+            
