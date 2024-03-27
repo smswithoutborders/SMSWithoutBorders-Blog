@@ -3,12 +3,12 @@
 	"short_name": "SMSWithoutBorders Blog",
 	"icons": [
 		{
-			"src": "/favicons/favicon.ico",
+			"src": "/favicon/favicon.ico",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/favicons/favicon.ico",
+			"src": "/favicon/favicon.ico",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
