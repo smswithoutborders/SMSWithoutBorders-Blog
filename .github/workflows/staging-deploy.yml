@@ -7,7 +7,9 @@ jobs:
   deploy:
     name: 🚀 Execute Deployment Script on Server
     runs-on: ubuntu-latest
-    environment: staging
+    environment:
+      name: staging
+      url: https://staging.smswithoutborders.com:18000
     steps:
       - name: 🚀 Execute Remote SSH Commands
         uses: appleboy/ssh-action@master

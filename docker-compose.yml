@@ -12,3 +12,4 @@ services:
     volumes:
       - ${SSL_CERTIFICATE_PATH:?err}:/etc/nginx/ssl/cert.pem
       - ${SSL_KEY_PATH:?err}:/etc/nginx/ssl/key.pem
+      - ${SSL_CHAIN_PATH:?err}:/etc/nginx/ssl/chain.pem
