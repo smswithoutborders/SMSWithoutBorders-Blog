@@ -1,4 +1,5 @@
 import Container from "@/app/_components/container";
+import { FACEBOOK_URL, GITHUB_URL, X_URL } from "@/lib/constants";
 import { FaFacebook, FaXTwitter, FaGithub } from "react-icons/fa6";
 
 export function Footer() {
@@ -9,31 +10,19 @@ export function Footer() {
 					<img src="/assets/blog/logo.png" alt="Your Logo" className="h-10 " />
 
 					<div className="flex md:justify-center">
-						<a
-							href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
 							<FaFacebook
 								size="25px"
 								className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"
 							/>
 						</a>
-						<a
-							href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={X_URL} target="_blank" rel="noopener noreferrer">
 							<FaXTwitter
 								size="25px"
 								className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"
 							/>
 						</a>
-						<a
-							href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
 							<FaGithub
 								size="25px"
 								className="m-2 mx-3 rounded hover:bg-white hover:blue text-white"
