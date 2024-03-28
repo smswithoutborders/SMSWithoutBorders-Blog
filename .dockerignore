@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Development files
+.next/
+.env
+.eslintcache
+.prettiercache
+.DS_Store
+
+# Build artifacts
+/out/
+
+# Version control files
+.git
+.gitignore
+
+# Docker related files
+.dockerignore
+Dockerfile*
+
+# Other miscellaneous files
+*.log
+
