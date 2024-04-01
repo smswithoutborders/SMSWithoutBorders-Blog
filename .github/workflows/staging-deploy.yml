@@ -23,7 +23,7 @@ jobs:
             echo "============================"
             echo "🚀 Updating repository ..."
             echo "============================"
-            cd major-build/staging-smswithoutborders/blog/
+            cd ${{ secrets.PROJECT_PATH }}
             if ! git pull; then
               echo "❌ Error updating repository!"
               exit 1
@@ -35,7 +35,7 @@ jobs:
             echo "========================="
             echo "🚀 Building project ..."
             echo "========================="
-            if ! docker compose --project-name=staging-smswithoutborders --env-file=.env up -d --build; then
+            if ! ${{ secrets.BUILD_CMD }}; then
               echo "❌ Error building project!"
               exit 1
             fi
