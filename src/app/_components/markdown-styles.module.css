@@ -16,3 +16,13 @@
 .markdown h3 {
 	@apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown a {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.markdown a:hover {
+	text-decoration: underline;
+}
