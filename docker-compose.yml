@@ -5,9 +5,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - PORT=${PORT:-80}
+        - SSL_PORT=${SSL_PORT:-443}
+        - SERVER_NAME=${SERVER_NAME:-localhost}
     ports:
-      - ${SSL_PORT:-433}:443
+      - ${PORT:-80}:80
+      - ${SSL_PORT:-443}:443
     environment:
+      - PORT=${PORT:-80}
+      - SSL_PORT=${SSL_PORT:-443}
       - SERVER_NAME=${SERVER_NAME:-localhost}
     volumes:
       - ${SSL_CERTIFICATE_PATH:?err}:/etc/nginx/ssl/cert.pem

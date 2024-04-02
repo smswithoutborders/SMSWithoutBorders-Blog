@@ -34,6 +34,9 @@ dependencies:
     version: 16.0.1
 
 devDependencies:
+  "@next/eslint-plugin-next":
+    specifier: ^14.1.4
+    version: 14.1.4
   "@types/node":
     specifier: ^20
     version: 20.11.30
@@ -288,6 +291,15 @@ packages:
         integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==
       }
     dev: false
+
+  /@next/eslint-plugin-next@14.1.4:
+    resolution:
+      {
+        integrity: sha512-n4zYNLSyCo0Ln5b7qxqQeQ34OZKXwgbdcx6kmkQbywr+0k6M3Vinft0T72R6CDAcDrne2IAgSud4uWCzFgc5HA==
+      }
+    dependencies:
+      glob: 10.3.10
+    dev: true
 
   /@next/swc-darwin-arm64@14.1.0:
     resolution:

@@ -8,10 +8,20 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const baseURL = process.env.BASE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-	title: "Smswithoutborders",
-	description: "SMS Without Borders Official Blog Feed.",
+	metadataBase: new URL(baseURL),
+	title: "SMSWithoutBorders >> Blog",
+	description:
+		"SMS Without Borders (SWoB) is a platform that enables users without access to an active internet connection to continue communicating with online services using SMS messages",
 	openGraph: {
+		url: baseURL,
+		siteName: "SMSWithoutBorders >> Blog",
+		title: "SMSWithoutBorders >> Blog",
+		description:
+			"SMS Without Borders (SWoB) is a platform that enables users without access to an active internet connection to continue communicating with online services using SMS messages",
+		type: "website",
 		images: [HOME_OG_IMAGE_URL]
 	}
 };
@@ -32,7 +42,7 @@ export default function RootLayout({
 			</head>
 			<body className={inter.className}>
 				<Navbar />
-				<div className="min-h-screen">{children}</div>
+				<div className="min-h-screen bg-neutral-100">{children}</div>
 				<Footer />
 			</body>
 		</html>
