@@ -17,7 +17,7 @@ export function Navbar() {
 		<div className="border-b text-black border-neutral-300 bg-white w-full z-10 py-4 fixed top-0">
 			<Container>
 				<div className="flex justify-between items-center">
-					<Logo src="/logo.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
+					<Logo src="/icon.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
 					<div className="md:hidden">
 						{isMenuOpen ? (
 							<AiOutlineClose onClick={toggleMenu} size={20} className="cursor-pointer" />

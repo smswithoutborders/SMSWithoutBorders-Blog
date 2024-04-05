@@ -10,7 +10,7 @@ export function Footer() {
 		<footer className="border-t text-white border-neutral-200 bg-indigo-950 justify-between items-center py-5">
 			<Container>
 				<div className="flex flex-col md:flex-row justify-between items-center md:px-4">
-					<Logo src="/logo.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
+					<Logo src="/icon.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
 					<div className="grid grid-flow-col gap-6 mt-5 md:mt-0">
 						<a
 							href="mailto:support@smswithoutborders.com"
