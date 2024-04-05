@@ -3,6 +3,7 @@ import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/_components/navbar";
+import Providers from "./_components/ProgressBarProvider";
 
 import "./globals.css";
 
@@ -41,9 +42,11 @@ export default function RootLayout({
 				<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 			</head>
 			<body className={inter.className}>
-				<Navbar />
-				<div className="min-h-screen bg-neutral-100">{children}</div>
-				<Footer />
+				<Providers>
+					<Navbar />
+					<div className="min-h-screen bg-neutral-100">{children}</div>
+					<Footer />
+				</Providers>
 			</body>
 		</html>
 	);
