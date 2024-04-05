@@ -1,13 +1,13 @@
 ---
 title: "Reliability Of Gateway Clients In Smswithoutborders"
-excerpt: "SMSWithoutBorders is an open source proactive mobile app designed to enable users to send secure SMS messages to online platforms such as Gmail, Telegram, and X (Twitter) using SMS messaging without an internet connection."
-coverImage: "icon.png"
+excerpt: "SMSWithoutBorders is a free mobile app that lets you send secure SMS messages to online platforms like Gmail, Telegram, and X (Twitter) without needing the internet. This blog will explain how SMSWithoutBorders does this using tools like SMSWithoutBorders Gateway Clients."
+coverImage: "/icon.png"
 date: "2024-04-05"
 author:
   name: "Aysha Musa"
-  picture: "anon-avatar.jpeg"
+  picture: "/anon-avatar.jpeg"
 ogImage:
-  url: "icon.png"
+  url: "/icon.png"
 ---
 
 SMSWithoutBorders is an open source proactive mobile app designed to enable users to send secure SMS messages to online platforms such as Gmail, Telegram, and X (Twitter) using SMS messaging without an internet connection. The scope of this blog includes knowing how SMSWithoutBorders accomplishes this using SMS tools such as SMSWithoutBorders Gateway Clients.
