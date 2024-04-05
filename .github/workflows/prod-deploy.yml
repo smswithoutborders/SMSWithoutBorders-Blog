@@ -11,6 +11,35 @@ jobs:
       name: production
       url: https://blog.smswithoutborders.com
     steps:
+      - name: Checkout Git Repository
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJs
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 18
+      
+      - name: Create .env.local file
+        run: echo "BASE_URL=${{ secrets.BASE_URL }}" > .env.local
+
+      - name: Install Dependencies
+        run: |
+          npm install -g pnpm
+          pnpm install
+
+      - name: Build Application
+        run: pnpm build
+
+      - name: Securely Copy Artifacts to Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          source: "out/"
+          target: ${{ secrets.BUILD_PATH }}
+          rm: true
+
       - name: 🚀 Execute Remote SSH Commands
         uses: appleboy/ssh-action@master
         with:
@@ -21,25 +50,12 @@ jobs:
             set -e
 
             echo "============================"
-            echo "🚀 Updating repository ..."
+            echo "🚀 Deploy Project ..."
             echo "============================"
-            cd ${{ secrets.PROJECT_PATH }}
-            if ! git pull; then
-              echo "❌ Error updating repository!"
+            if ! ${{secrets.BUILD_CMD}}; then
+              echo "❌ Error deploying project!"
               exit 1
             fi
             echo "==============================="
-            echo "✅ Repository update complete"
+            echo "✅ Deployment complete"
             echo "==============================="
-
-            echo "========================="
-            echo "🚀 Building project ..."
-            echo "========================="
-            if ! ${{ secrets.BUILD_CMD }}; then
-              echo "❌ Error building project!"
-              exit 1
-            fi
-            echo "==========================="
-            echo "✅ Project build complete"
-            echo "==========================="
-            
