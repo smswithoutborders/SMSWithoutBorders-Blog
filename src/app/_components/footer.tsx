@@ -36,9 +36,7 @@ export function Footer() {
 				<div className="text-center mt-5">
 					<hr className="border-t-2 border-gray-400" />
 					<p className="text-sm text-gray-400 mt-3">
-						<span className="mr-2">
-							&copy; {currentYear} SMSWithoutBorders. All rights reserved.
-						</span>
+						<span>&copy; {currentYear} SMSWithoutBorders.</span>
 					</p>
 				</div>
 			</Container>
