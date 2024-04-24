@@ -7,7 +7,17 @@ export default function Index() {
 
 	return (
 		<main>
-			<Container>{<MoreStories posts={allPosts} />}</Container>
+			<Container>
+				{allPosts.length === 0 ? (
+					<div className="py-60 px-8 mt-10">
+						<div className="mx-auto max-w-lg py-10 px-8 bg-white shadow-md rounded-lg">
+							<p className="text-xl text-center font-bold text-gray-700">No posts available yet.</p>
+						</div>
+					</div>
+				) : (
+					<MoreStories posts={allPosts} />
+				)}
+			</Container>
 		</main>
 	);
 }
