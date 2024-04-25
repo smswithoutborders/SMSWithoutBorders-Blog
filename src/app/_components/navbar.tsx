@@ -38,40 +38,27 @@ export function Navbar() {
 						</a>
 						<a
 							href="mailto:support@smswithoutborders.com"
-							target="_blank"
-							rel="noopener noreferrer"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
 						>
 							<FaEnvelope size={30} className="rounded bg-white p-1" />
 						</a>
 						<a
 							href={FACEBOOK_URL}
-							target="_blank"
-							rel="noopener noreferrer"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
 						>
 							<FaFacebook size={30} className="rounded-full bg-white p-1" />
 						</a>
-						<a
-							href={X_URL}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="text-gray-700 hover:text-blue-500 transition duration-300"
-						>
+						<a href={X_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
 							<FaXTwitter size={30} className="rounded-full bg-white p-1" />
 						</a>
 						<a
 							href={GITHUB_URL}
-							target="_blank"
-							rel="noopener noreferrer"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
 						>
 							<FaGithub size={30} className="rounded-full bg-white p-1" />
 						</a>
 						<a
 							href={LINKEDIN_URL}
-							target="_blank"
-							rel="noopener noreferrer"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
 						>
 							<FaLinkedin size={30} className="rounded-full bg-white p-1" />
@@ -84,56 +71,33 @@ export function Navbar() {
 			>
 				<a
 					href="/posts"
-					target="_blank"
-					rel="noopener noreferrer"
 					className=" block text-gray-700 hover:text-blue-500 transition duration-300"
 				>
 					Articles
 				</a>
-				<a
-					href="/releases"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
+				<a href="/releases" className="text-gray-700 hover:text-blue-500 transition duration-300">
 					Releases
 				</a>
 				<a
 					href="mailto:support@smswithoutborders.com"
-					target="_blank"
-					rel="noopener noreferrer"
 					className="text-gray-700 hover:text-blue-500 transition duration-300"
 				>
 					<FaEnvelope size={30} className="rounded p-1" />
 				</a>
 				<a
 					href={FACEBOOK_URL}
-					target="_blank"
-					rel="noopener noreferrer"
 					className="text-gray-700 hover:text-blue-500 transition duration-300"
 				>
 					<FaFacebook size={30} className="rounded-full p-1" />
 				</a>
-				<a
-					href={X_URL}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
+				<a href={X_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
 					<FaXTwitter size={30} className="rounded-full p-1" />
 				</a>
-				<a
-					href={GITHUB_URL}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
+				<a href={GITHUB_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
 					<FaGithub size={30} className="rounded-full p-1" />
 				</a>
 				<a
 					href={LINKEDIN_URL}
-					target="_blank"
-					rel="noopener noreferrer"
 					className="text-gray-700 hover:text-blue-500 transition duration-300"
 				>
 					<FaLinkedin size={30} className="rounded-full p-1" />

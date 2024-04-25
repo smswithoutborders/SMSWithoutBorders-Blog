@@ -29,6 +29,10 @@ export function getReleaseBySlug(slug: string) {
 }
 
 export function getReleaseSlugs() {
+	if (!fs.existsSync(releasesDirectory)) {
+		console.error(`Directory ${releasesDirectory} does not exist.`);
+		return [];
+	}
 	return fs.readdirSync(releasesDirectory);
 }
 
