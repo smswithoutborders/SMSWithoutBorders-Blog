@@ -27,19 +27,12 @@ export function Navbar() {
 					</div>
 
 					<div className="hidden md:flex justify-end gap-6">
-						<a
-							href="/posts"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="text-gray-700 hover:text-blue-500 transition duration-300"
-						>
+						<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
 							Articles
 						</a>
 						<a
 							href="/releases"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
-							target="_blank"
-							rel="noopener noreferrer"
 						>
 							Releases
 						</a>
@@ -90,20 +83,10 @@ export function Navbar() {
 				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} mt-5 px-4 py-2 rounded-lg shadow-md`}
 			>
 				<div className="flex flex-col justify-center gap-4 items-center">
-					<a
-						href="/posts"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-gray-700 hover:text-blue-500 transition duration-300"
-					>
+					<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
 						Articles
 					</a>
-					<a
-						href="/releases"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-gray-700 hover:text-blue-500 transition duration-300"
-					>
+					<a href="/releases" className="text-gray-700 hover:text-blue-500 transition duration-300">
 						Releases
 					</a>
 				</div>
