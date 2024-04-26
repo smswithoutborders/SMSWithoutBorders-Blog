@@ -50,7 +50,7 @@ export function ReleasePreview({ title, date, excerpt, author, slug, content }: 
 				<Link
 					as={`/releases/${slug}`}
 					href="/releases/[slug]"
-					className="hover:unde/postsrline font-semibold"
+					className="hover:underline font-semibold"
 				>
 					{title}
 				</Link>
