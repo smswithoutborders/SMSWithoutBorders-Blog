@@ -47,9 +47,9 @@ export function getAllPosts(): Post[] {
 
 export function getAllReleases(): Post[] {
 	const slugs = getReleaseSlugs();
-	const posts = slugs
+	const releases = slugs
 		.map((slug) => getReleaseBySlug(slug))
-		// sort posts by date in descending order
 		.sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-	return posts;
+
+	return releases;
 }

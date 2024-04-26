@@ -1,5 +1,5 @@
 import Container from "@/app/_components/container";
-import { MoreStories } from "@/app/_components/more-stories";
+import { MoreReleases } from "@/app/_components/more-stories";
 import { getAllReleases } from "@/lib/api";
 
 export default function Index() {
@@ -17,7 +17,7 @@ export default function Index() {
 						</div>
 					</div>
 				) : (
-					<MoreStories posts={allReleases} />
+					<MoreReleases posts={allReleases} />
 				)}
 			</Container>
 		</main>

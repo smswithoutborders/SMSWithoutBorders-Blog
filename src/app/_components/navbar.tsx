@@ -66,42 +66,53 @@ export function Navbar() {
 					</div>
 				</div>
 			</Container>
+
 			<div
-				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} block justify-center gap-8 mt-5 px-20 py-2 rounded-lg shadow-md`}
+				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} block justify-center gap-8 mt-5 px-20 py-2 shadow-md`}
 			>
-				<a
-					href="/posts"
-					className=" block text-gray-700 hover:text-blue-500 transition duration-300"
-				>
-					Articles
-				</a>
-				<a href="/releases" className="text-gray-700 hover:text-blue-500 transition duration-300">
-					Releases
-				</a>
-				<a
-					href="mailto:support@smswithoutborders.com"
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
-					<FaEnvelope size={30} className="rounded p-1" />
-				</a>
-				<a
-					href={FACEBOOK_URL}
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
-					<FaFacebook size={30} className="rounded-full p-1" />
-				</a>
-				<a href={X_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
-					<FaXTwitter size={30} className="rounded-full p-1" />
-				</a>
-				<a href={GITHUB_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
-					<FaGithub size={30} className="rounded-full p-1" />
-				</a>
-				<a
-					href={LINKEDIN_URL}
-					className="text-gray-700 hover:text-blue-500 transition duration-300"
-				>
-					<FaLinkedin size={30} className="rounded-full p-1" />
-				</a>
+				<div className="flex justify-center items-center">
+					<div className="flex flex-col items-center gap-4">
+						<a
+							href="/posts"
+							className="block text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							Articles
+						</a>
+						<a
+							href="/releases"
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							Releases
+						</a>
+						<a
+							href="mailto:support@smswithoutborders.com"
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							<FaEnvelope size={30} className="rounded p-1" />
+						</a>
+						<a
+							href={FACEBOOK_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							<FaFacebook size={30} className="rounded-full p-1" />
+						</a>
+						<a href={X_URL} className="text-gray-700 hover:text-blue-500 transition duration-300">
+							<FaXTwitter size={30} className="rounded-full p-1" />
+						</a>
+						<a
+							href={GITHUB_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							<FaGithub size={30} className="rounded-full p-1" />
+						</a>
+						<a
+							href={LINKEDIN_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							<FaLinkedin size={30} className="rounded-full p-1" />
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
