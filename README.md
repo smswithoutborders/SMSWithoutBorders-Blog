@@ -1,38 +1,85 @@
 # Smswithoutborders Blog
 
-#### A statically generated blog using Next.js, Markdown, and TypeScript
+Welcome to the SMSWithoutBorders Blog repository! This blog serves as a platform to share updates, new features, and ongoing projects related to SMSWithoutBorders. We encourage contributions from anyone interested in our project and its mission.
 
-SMSWithoutBorders(Relay sms) Official Blog Feed.
-[smswithoutborders](https://smswithoutborders.com)
+## About SMSWithoutBorders
 
-The blog posts are stored in `/_posts` and `/_releases` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+SMSWithoutBorders is an open-source project aimed at providing relay SMS services. Our mission is to [insert mission statement here]. To learn more about SMSWithoutBorders, visit our website.[https://smswithoutborders.com/](https://smswithoutborders.com/)
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+### Want to Contribute??
 
-## Demo
+Here's how you can contribute:
 
-[https://blog.smswithoutborders.com/](https://blog.smswithoutborders.com/)
+- Cloning the Repository
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io) to bootstrap the example:
+Clone the repository to your local machine:
 
 ```bash
-npx create-next-app --example blog-starter blog-starter-app
+git clone https://github.com/smswithoutborders/blog/tree/main
 ```
+
+- Navigate to the project directory:
 
 ```bash
-yarn create next-app --example blog-starter blog-starter-app
+
+    cd blog
 ```
+
+- Setting Up Locally
+
+Ensure you have Node.js installed on your machine.
+
+- Install dependencies using PNPM:
 
 ```bash
-pnpm create next-app --example blog-starter blog-starter-app
+    pnpm install
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000).
+- Making Changes
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Create a new branch for your changes:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+After making changes, add and commit them:
+
+```bash
+    git add .
+    git commit -m "Add your commit message here"
+```
+
+- Testing Locally
+
+  Once you've made your changes, run the blog locally to test them:
+
+```bash
+    pnpm run dev
+```
+
+This will start a development server, and you can view the blog at [http://localhost:3000](http://localhost:3000). Verify that your changes look and function as expected.
+
+### Submitting a Pull Request
+
+    Push your changes to your forked repository:
+
+```bash
+    git push origin feature/your-feature-name
+```
+
+    Go to the repository on GitHub and create a pull request from your branch to the main branch.
+
+    Provide a clear description of your changes in the pull request, and wait for the review and feedback from the maintainers.
+
+#### Deployment
+
+Our blog is automatically deployed when changes are merged into the main branch. Once your pull request is approved and merged, your changes will be live on our blog!
+
+### Get in Touch
+
+If you have any questions or need assistance with contributing, or think we can change something on the blog layout or anything, feel free to open an issue in this repository.
 
 # Notes
 
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+`smswithoutborders blog` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
