@@ -8,6 +8,7 @@ author:
   picture: "/anon-avatar.jpeg"
 ogImage:
   url: "/icon.png"
+draft: true
 ---
 
 At SMSwithoutBorders, we're constantly striving to enhance your secure messaging experience. To accomplish this, we rely on data to comprehend how users interact with our tools. Here's where the SMSwithoutBorders Telemetry Dashboard comes in!
