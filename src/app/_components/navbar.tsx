@@ -17,7 +17,12 @@ export function Navbar() {
 		<div className="border-b text-black border-neutral-300 bg-white w-full z-10 py-4 fixed top-0">
 			<Container>
 				<div className="flex justify-between items-center">
-					<Logo src="/icon.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
+					<Logo
+						src="/icon.png"
+						alt="SMSWithoutBorders Logo"
+						name="SMSWithoutBorders | Blog"
+						url="/"
+					/>
 					<div className="md:hidden">
 						{isMenuOpen ? (
 							<AiOutlineClose onClick={toggleMenu} size={20} className="cursor-pointer" />
@@ -30,12 +35,14 @@ export function Navbar() {
 						<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
 							Articles
 						</a>
+						<span>|</span>
 						<a
 							href="/releases"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
 						>
 							Releases
 						</a>
+						<span>|</span>
 						<a
 							href="mailto:support@smswithoutborders.com"
 							className="text-gray-700 hover:text-blue-500 transition duration-300"
@@ -82,7 +89,7 @@ export function Navbar() {
 			<div
 				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} mt-5 px-4 py-2 rounded-lg shadow-md`}
 			>
-				<div className="flex flex-col justify-center gap-4 items-center">
+				<div className="flex flex-col justify-center gap-4 items-center mb-4">
 					<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
 						Articles
 					</a>
@@ -90,7 +97,7 @@ export function Navbar() {
 						Releases
 					</a>
 				</div>
-
+				<hr />
 				<div className="flex justify-center mt-4 gap-6">
 					<a
 						href="mailto:support@smswithoutborders.com"
