@@ -18,11 +18,9 @@
 }
 
 .markdown a {
-	color: blue;
-	text-decoration: none;
-	cursor: pointer;
+	@apply text-blue-600 hover:underline;
 }
 
-.markdown a:hover {
-	text-decoration: underline;
+.markdown ul {
+	@apply list-disc ml-8;
 }
