@@ -67,6 +67,7 @@ export function generateMetadata({ params }: Params): Metadata {
 	};
 }
 
+// Export generateStaticParams function along with the default export
 export async function generateStaticParams() {
 	const releases = getAllReleases();
 
