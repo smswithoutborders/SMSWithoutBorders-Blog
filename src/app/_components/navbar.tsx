@@ -17,7 +17,12 @@ export function Navbar() {
 		<div className="border-b text-black border-neutral-300 bg-white w-full z-10 py-4 fixed top-0">
 			<Container>
 				<div className="flex justify-between items-center">
-					<Logo src="/icon.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />
+					<Logo
+						src="/icon.png"
+						alt="SMSWithoutBorders Logo"
+						name="SMSWithoutBorders | Blog"
+						url="/"
+					/>
 					<div className="md:hidden">
 						{isMenuOpen ? (
 							<AiOutlineClose onClick={toggleMenu} size={20} className="cursor-pointer" />
@@ -27,44 +32,114 @@ export function Navbar() {
 					</div>
 
 					<div className="hidden md:flex justify-end gap-6">
+						<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
+							Articles
+						</a>
+						<span>|</span>
+						<a
+							href="/releases"
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							Releases
+						</a>
+						<span>|</span>
 						<a
 							href="mailto:support@smswithoutborders.com"
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<FaEnvelope size={20} className="rounded" />
+							<FaEnvelope size={30} className="rounded bg-white p-1" />
 						</a>
-						<a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-							<FaFacebook size={20} className="rounded" />
+						<a
+							href={FACEBOOK_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaFacebook size={30} className="rounded-full bg-white p-1" />
 						</a>
-						<a href={X_URL} target="_blank" rel="noopener noreferrer">
-							<FaXTwitter size={20} className="rounded" />
+						<a
+							href={X_URL}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+						>
+							<FaXTwitter size={30} className="rounded-full bg-white p-1" />
 						</a>
-						<a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-							<FaGithub size={20} className="rounded" />
+						<a
+							href={GITHUB_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaGithub size={30} className="rounded-full bg-white p-1" />
 						</a>
-						<a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-							<FaLinkedin size={20} className="rounded" />
+						<a
+							href={LINKEDIN_URL}
+							className="text-gray-700 hover:text-blue-500 transition duration-300"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedin size={30} className="rounded-full bg-white p-1" />
 						</a>
 					</div>
 				</div>
 			</Container>
-			<div className={`md:hidden ${isMenuOpen ? "flex" : "hidden"} justify-center gap-6 mt-5`}>
-				<a href="mailto:support@smswithoutborders.com" target="_blank" rel="noopener noreferrer">
-					<FaEnvelope size={20} className="rounded" />
-				</a>
-				<a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-					<FaFacebook size={20} className="rounded" />
-				</a>
-				<a href={X_URL} target="_blank" rel="noopener noreferrer">
-					<FaXTwitter size={20} className="rounded" />
-				</a>
-				<a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-					<FaGithub size={20} className="rounded" />
-				</a>
-				<a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-					<FaLinkedin size={20} className="rounded" />
-				</a>
+			<div
+				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} mt-5 px-4 py-2 rounded-lg shadow-md`}
+			>
+				<div className="flex flex-col justify-center gap-4 items-center mb-4">
+					<a href="/posts" className="text-gray-700 hover:text-blue-500 transition duration-300">
+						Articles
+					</a>
+					<a href="/releases" className="text-gray-700 hover:text-blue-500 transition duration-300">
+						Releases
+					</a>
+				</div>
+				<hr />
+				<div className="flex justify-center mt-4 gap-6">
+					<a
+						href="mailto:support@smswithoutborders.com"
+						className="text-gray-700 hover:text-blue-500 transition duration-300"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaEnvelope size={30} className="rounded p-1" />
+					</a>
+					<a
+						href={FACEBOOK_URL}
+						className="text-gray-700 hover:text-blue-500 transition duration-300"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaFacebook size={30} className="rounded-full p-1" />
+					</a>
+					<a
+						href={X_URL}
+						className="text-gray-700 hover:text-blue-500 transition duration-300"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaXTwitter size={30} className="rounded-full p-1" />
+					</a>
+					<a
+						href={GITHUB_URL}
+						className="text-gray-700 hover:text-blue-500 transition duration-300"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaGithub size={30} className="rounded-full p-1" />
+					</a>
+					<a
+						href={LINKEDIN_URL}
+						className="text-gray-700 hover:text-blue-500 transition duration-300"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaLinkedin size={30} className="rounded-full p-1" />
+					</a>
+				</div>
 			</div>
 		</div>
 	);
