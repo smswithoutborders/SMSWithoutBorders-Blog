@@ -6,7 +6,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"prepare": "husky install"
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"classnames": "^2.5.1",
