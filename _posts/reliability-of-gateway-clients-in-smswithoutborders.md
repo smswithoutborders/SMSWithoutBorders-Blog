@@ -10,6 +10,8 @@ ogImage:
   url: "/icon.png"
 ---
 
+[reliability-data-flow](\posts\Reliability-Data-Flow.jpg)
+
 SMSWithoutBorders is an open source proactive mobile app designed to enable users to send secure SMS messages to online platforms such as Gmail, Telegram, and X (Twitter) using SMS messaging without an internet connection. The scope of this blog includes knowing how SMSWithoutBorders accomplishes this using SMS tools such as SMSWithoutBorders Gateway Clients.
 
 ### What are Gateway Clients?
@@ -27,3 +29,5 @@ To calculate reliability, we send test messages to the Gateway Clients and measu
 ### Why It Matters to You as an SMSWithoutBorders App User
 
 As a user of the SMSWithoutBorders app, you directly interact with Gateway Clients, and their reliability impacts your experience. Reliable message routing ensures that your messages and important information are published online promptly, enhancing your overall user experience. You can now prioritize the most reliable Gateway Clients when sending messages through the SMSWithoutBorders app.
+
+The data for these reliability tests are publicly available and can be downloaded on the [reliability dashboard](https://telemetry.smswithoutborders.com/)
