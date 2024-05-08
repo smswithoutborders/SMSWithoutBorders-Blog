@@ -14,7 +14,7 @@ draft: true
 At SMSwithoutBorders, we're constantly striving to enhance your secure messaging experience. To accomplish this, we rely on data to comprehend how users interact with our tools. Here's where the SMSwithoutBorders Telemetry Dashboard comes in!
 This dashboard is our central hub for visualizing key user metrics, providing valuable insights into usage and user base growth. Let's delve into the first three core metrics displayed on the dashboard: Sign-Ups, Available Users, and Countries.
 
-### Sign-Ups: Tracking Our Growing Community.
+### Sign-Ups: Tracking Our Growing Community
 
 The Sign-Ups metric acts as a vital growth indicator. It simply counts the total number of users who have created accounts on the SMSWOB app. This metric helps us understand the app's overall reach and user acquisition effectiveness.
 A steady increase in sign-ups indicates a growing interest in our secure offline-to-online messaging solution. To see how many users have signed up on the [telemetry page](https://staging.smswithoutborders.com:8080/), just click 'Signed Up Users' and filter by date and year to get the specific timeframe you're interested in.
