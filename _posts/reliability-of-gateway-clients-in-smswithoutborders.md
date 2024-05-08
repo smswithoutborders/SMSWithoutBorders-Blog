@@ -9,6 +9,7 @@ author:
 ogImage:
   url: "/icon.png"
 ---
+
 [reliability-data-flow](\posts\Reliability-Data-Flow.jpg)
 
 SMSWithoutBorders is an open source proactive mobile app designed to enable users to send secure SMS messages to online platforms such as Gmail, Telegram, and X (Twitter) using SMS messaging without an internet connection. The scope of this blog includes knowing how SMSWithoutBorders accomplishes this using SMS tools such as SMSWithoutBorders Gateway Clients.
