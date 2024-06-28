@@ -10,6 +10,10 @@ ogImage:
   url: "/icon.png"
 ---
 
+**Source Code**
+
+- [GitHub repository](https://github.com/smswithoutborders/SMSwithoutborders-BE/tree/staging)
+
 **_NOTE_**:**_This writeup doesn't contain information about all the components involved in the operations; it focuses solely on the Vault and the client devices._**
 
 The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages. It leverages the [Double Ratchet Algorithm](https://signal.org/docs/specifications/doubleratchet/) to ensure secure communication between the sending device and the publishing server. The Vault has undergone significant evolution to reach its current state.
