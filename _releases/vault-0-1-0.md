@@ -20,7 +20,7 @@ The Vault is a technology developed by the SMSWithoutBorders team to secure user
 
 ### Key Features
 
-- **End-to-End Encryption**: Devices exchange keys using X25519 for secure communication with the Vault.
+- **End-to-End Encryption**: Devices exchange keys using X25519[(Curve25519)](https://en.wikipedia.org/wiki/Curve25519) for secure communication with the Vault.
 - **Device Identification**: Each device is uniquely identified using a device_id generated from the key exchange.
 - **Double Ratchet Algorithm**: Ensures message confidentiality and forward secrecy.
 
@@ -34,19 +34,20 @@ To be identified and communicate securely, a device must perform two X25519 key 
 
 ![generating-an-identity](/posts/generating_an_identity.png)
 
-- **For Generating an Identity (Device ID)**: Refer to the [specification](https://github.com/smswithoutborders/SMSwithoutborders-BE/blob/staging/docs/specifications.md#2-device-id).
-- **For Communication**: Encrypting and decrypting messages using the Double Ratchet Algorithm.
+**1. For Generating an Identity (Device ID)**: Refer to the [specification](https://github.com/smswithoutborders/SMSwithoutborders-BE/blob/staging/docs/specifications.md#2-device-id).
+
+**2. For Communication**: Encrypting and decrypting messages using the Double Ratchet Algorithm.
 
 #### _**Communication Using The Double Ratchet Algorithm**_
 
-Messages sent from an authenticated device are encrypted using the Double Ratchet Algorithm and can be decrypted by the Vault using the shared secret obtained from the X25519 key exchange for communication.
+Messages sent from an authenticated device are encrypted using the Double Ratchet Algorithm and can be decrypted by the Vault using the same algorithm.
 
 ![double-ratchet-algorithm](/posts/double-ratchet-algorithm.png)
 
 ### Considerations
 
 - **Transmission via SMS**: End-to-end encryption between the device and the Vault ensures that no unauthorized party can read the content in transit.
-- **Security**: The use of the Double Ratchet Algorithm provides forward secrecy and ensures that even if one message is compromised, previous and future messages remain secure.
+- **Security**: The use of the Double Ratchet Algorithm provides forward secrecy and ensures that even if one session is compromised, it does not compromise future sessions.
 - **Authentication**: Devices are authenticated using their unique device_id, computed from the initial key exchange, ensuring that only authorized devices can communicate with the Vault.
 
 ### **Changelog**
