@@ -1,8 +1,8 @@
 ---
-title: "SMSWithoutborders Telemetry Dashboard"
-excerpt: "The SMSwithoutBorders Telemetry Dashboard sheds light on user behavior through key metrics like sign-ups, active users, and user location. This data empowers the team to optimize the app, ensuring a secure and seamless messaging experience for a global audience."
+title: "RelaySMS Expands User Control with Device ID Registration"
+excerpt: "RelaySMS (swob app) introduces a powerful new feature: Device ID Registration with RelaySMS Vault! This innovative approach gives you more control over your offline messaging experience."
 coverImage: "/icon.png"
-date: "2024-04-26"
+date: "2024-07-01"
 author:
   name: "Aysha Musa"
   picture: "/anon-avatar.jpeg"
@@ -11,28 +11,30 @@ ogImage:
 draft: true
 ---
 
-At SMSwithoutBorders, we're constantly striving to enhance your secure messaging experience. To accomplish this, we rely on data to comprehend how users interact with our tools. Here's where the SMSwithoutBorders Telemetry Dashboard comes in!
-This dashboard is our central hub for visualizing key user metrics, providing valuable insights into usage and user base growth. Let's delve into the first three core metrics displayed on the dashboard: Sign-Ups, Available Users, and Countries.
+At RelaySMS (formerly SMSWithoutBorders(SWOB) app), we understand the importance of staying connected, even when you're offline. But we also value your privacy and the flexibility to manage your communication needs. That's why we're excited to announce a new feature that puts you in control: Device ID Registration with RelaySMS Vault!
 
-### Sign-Ups: Tracking Our Growing Community.
 
-The Sign-Ups metric acts as a vital growth indicator. It simply counts the total number of users who have created accounts on the SMSWOB app. This metric helps us understand the app's overall reach and user acquisition effectiveness.
-A steady increase in sign-ups indicates a growing interest in our secure offline-to-online messaging solution. To see how many users have signed up on the [telemetry page](https://staging.smswithoutborders.com:8080/), just click 'Signed Up Users' and filter by date and year to get the specific timeframe you're interested in.
 
-![signed-up-users.png](/posts/signups.png.png)
+### What is Device ID Registration?
 
-### Available Users: Staying Connected with Active Accounts
+Previously, RelaySMS relied primarily on phone numbers for user identification. This meant that switching phone numbers, traveling, or using multiple devices could potentially disrupt your ability to send offline messages.
+With Device ID Registration, made possible by the innovative RelaySMS Vault, we're changing that system. Now, you can choose to register your RelaySMS account using your device's unique ID instead of just your phone number. This allows your access tokens (think of them as digital keys for sending offline messages) to be linked to your device, not just your phone number.
 
-The “Available Users” metric takes things a step further. It focuses on the number of users who have active accounts within the app. This provides valuable insights into user retention and engagement.
-A healthy “Available Users” number suggests that users are finding value in the SMSWOB app and keeping their accounts active. By monitoring this metric over time, we can identify potential areas for improvement that might encourage continued user engagement. The 'Available Users' section on the [telemetry page](https://staging.smswithoutborders.com:8080/) displays this data. You can conveniently filter the results by date and year for a more granular view.
 
-![available-users.png](/posts/available-users.png.png)
 
-### Country Breakdown: A Global Reach
+### Why is Device ID Registration a Big Deal?
 
-The country metric paints a fascinating picture of our user base's geographical distribution. It displays not only the specific countries where users are signing up but also the total number of countries where the SMSWOB app is being utilized to stay connected. This data allows us to see how our secure offline-to-online messaging solution is breaking down barriers and fostering communication across the globe despite varying internet connectivity statuses. To explore user trends by country, click on 'available Users' on the [telemetry page](https://staging.smswithoutborders.com:8080/). You can then filter the data by date and year to see how users vary across different countries.
+Here's what Device ID Registration brings to the table:
+Unmatched Flexibility: Switching phone numbers, or using a temporary SIM card while traveling – no worries! Device ID Registration ensures your access to offline messaging remains uninterrupted.
+Enhanced Privacy: We prioritize your privacy. Using your device ID for registration provides an additional layer of anonymity, reducing reliance on your phone number.
+Enhanced Security: The Vault adds an extra layer of encryption for your access tokens, keeping them safe from unauthorized access.
 
-![country.png](/posts/country.png.png)
 
-These three core metrics are just the beginning for the SMSwithoutBorders Telemetry Dashboard. They allow us to identify potential issues and, ultimately, optimize the SMSwithoutBorders experience for you.
-By leveraging the power of data, we can make data-driven decisions that enhance the tool's functionality, security, and user experience.
+### Maintaining Control: The Choice is Yours
+
+While Device ID Registration offers a convenient and secure option, we understand that some users might prefer phone number-based identification. Rest assured, the choice is yours! You can still choose to link your RelaySMS account to a specific phone number if that works best for you.
+Device ID Registration, combined with the power of RelaySMS Vault, offers a new level of flexibility and privacy for your offline messaging experience. Read the [vault release note](link) for more information on the vault.
+
+
+
+
