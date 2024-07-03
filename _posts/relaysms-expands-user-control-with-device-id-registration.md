@@ -20,8 +20,11 @@ With Device ID Registration, made possible by the innovative RelaySMS Vault, we'
 ### Why is Device ID Registration a Big Deal?
 
 Here's what Device ID Registration brings to the table:
+
 **Unmatched Flexibility**: Switching phone numbers, or using a temporary SIM card while traveling – no worries! Device ID Registration ensures your access to offline messaging remains uninterrupted.
+
 **Enhanced Privacy**: We prioritize your privacy. Using your device ID for registration provides an additional layer of anonymity, reducing reliance on your phone number.
+
 **Enhanced Security**: The Vault adds an extra layer of encryption for your access tokens, keeping them safe from unauthorized access.
 
 ### Maintaining Control: The Choice is Yours
