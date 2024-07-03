@@ -20,7 +20,7 @@ The decision to diversify protocol support stems from the need to address potent
 
 ### The Role of Gateway Clients in the Context of Resilience
 
-Gateway clients serve as the key component in facilitating the seamless transfer of messages from SMS to online platforms. Their ability to adapt to varying network conditions and protocol blockages is crucial for ensuring uninterrupted communication flow. With the introduction of multi-protocol support, gateway clients are poised to become even more resilient and reliable in their message-forwarding capabilities.
+Gateway clients serve as the key component in facilitating the seamless transfer of messages from SMS to online platforms. Their ability to adapt to varying network conditions and protocol blockages is crucial for ensuring uninterrupted communication flow. With the introduction of multi-protocol support, gateway clients are poised to become even more resilient and reliableg in their message-forwarding capabilities.
 
 Any disruption in message forwarding could have significant implications for users relying on SMSWithoutBorders for their message routing needs. By enhancing resilience through multi-protocol support, SMSWithoutBorders is not only safeguarding against potential disruptions but also instilling confidence in its user base.
 
