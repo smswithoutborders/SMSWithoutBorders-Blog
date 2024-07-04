@@ -27,4 +27,4 @@ Our mission remains the same: to empower users with secure and accessible commun
 ### What Does This Mean for You?
 
 The core functionality of the app isn't changing! You will be getting the same, offline to online messaging capabilities, and seamless integration with your favorite messaging platforms with an increased level of security with the introduction of the RelaySMS vault feature which adds an additional layer of protection to your access tokens. Over the coming weeks, you'll see the updated branding reflected in the app store and our website
-We're thrilled to embark on this new chapter with you. Stay tuned for exciting updates and developments within the SMSwithoutBorders project! Visit our [website](https://relaysms.smswithoutborders.com) for more information on the rebrand and updates.
+We're thrilled to embark on this new chapter with you. Stay tuned for exciting updates and developments within the SMSwithoutBorders project! Visit our [website](https://relay.smswithoutborders.com) for more information on the rebrand and updates.
