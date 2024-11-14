@@ -1,7 +1,7 @@
-version: "3"
-
 services:
-  blog:
+  blog-web:
+    container_name: blog-web
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile

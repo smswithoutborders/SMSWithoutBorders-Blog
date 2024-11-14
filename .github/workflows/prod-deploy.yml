@@ -1,11 +1,11 @@
-name: 🚀 Deploy SMSWithoutBorders Blog on Server (production)
+name: Deploy SMSWithoutBorders Blog on Server (production)
 on:
   push:
     branches:
       - main
 jobs:
   deploy:
-    name: 🚀 Execute Deployment Script on Server
+    name: Execute Deployment Script on Server
     runs-on: ubuntu-latest
     environment:
       name: production
@@ -17,7 +17,7 @@ jobs:
       - name: Setup NodeJs
         uses: actions/setup-node@v4
         with: 
-          node-version: 18
+          node-version: 20
       
       - name: Create .env.local file
         run: echo "BASE_URL=${{ secrets.BASE_URL }}" > .env.local
@@ -25,33 +25,33 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install -g pnpm
-          pnpm install
+          pnpm install --no-lockfile
 
       - name: Build Application
         run: pnpm build
 
       - name: Securely Copy Artifacts to Server
-        uses: appleboy/scp-action@v0.1.7
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           source: "./out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
           rm: true
 
-      - name: 🚀 Execute Remote SSH Commands
+      - name: Execute Remote SSH Commands
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           script: |
             set -e
 
             echo "============================"
-            echo "🚀 Deploy Project ..."
+            echo "Deploy Project ..."
             echo "============================"
             if ! ${{secrets.BUILD_CMD}}; then
               echo "❌ Error deploying project!"
