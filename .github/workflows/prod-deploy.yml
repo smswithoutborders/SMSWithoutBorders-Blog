@@ -17,7 +17,7 @@ jobs:
       - name: Setup NodeJs
         uses: actions/setup-node@v4
         with: 
-          node-version: 22
+          node-version: 20
       
       - name: Create .env.local file
         run: echo "BASE_URL=${{ secrets.BASE_URL }}" > .env.local
@@ -35,7 +35,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           source: "./out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
@@ -46,7 +46,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           script: |
             set -e
 
