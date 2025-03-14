@@ -38,4 +38,4 @@ We understand how crucial it is to know if your message was successfully sent, a
 
 With these updates, **RelaySMS continues ensuring users can send and receive messages even during internet shutdowns.** Stay connected, no matter what.
 
-📢 _These features are currently available for iOS and will be coming soon to Android!_
+📢 (Try out )[https://apps.apple.com/us/app/relaysms/id6630382970] these new features today! Coming soon to Androids
