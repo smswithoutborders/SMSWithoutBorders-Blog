@@ -14,7 +14,7 @@ At SMSWithoutBorders, we're constantly working to improve how users stay connect
 
 ## 📩 Replies for Bridges: Receive Responses Even Offline
 
-One of the greatest challenges of offline communication is knowing if the recipient has responded. We introduced **[bridge](https://blog.smswithoutborders.com/posts/Bridges)** in a previous update, which enables users to communicate without saving their accounts; but are given primary aliases which act as their default RelaySMS accounts. The new feature **Replies for Bridges**, enables users who send messages through **Bridges** to now receive replies directly via SMS.
+One of the greatest challenges of offline communication is knowing if the recipient has responded. We introduced **[the Bridges feature](https://blog.smswithoutborders.com/posts/Bridges)** in a previous update, which enables users to communicate without saving their accounts, but are given primary aliases which act as their default RelaySMS accounts. The new feature, **Replies for Bridges**, enables users who send messages through **Bridges** to now receive replies directly via SMS.
 
 ### Here’s how it works:
 
