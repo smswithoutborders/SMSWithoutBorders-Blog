@@ -14,11 +14,11 @@ ogImage:
 
 SMSWithoutBorders is pleased to announce a significant advancement in message-forwarding functionalities for its gateway clients. By default, these clients have relied solely on HTTPS for routing SMS messages to online platforms. This update introduces support for additional protocols, including AMQP, FTP, and SMTP, providing greater flexibility and resilience in message delivery.
 
-### Breaking Down the Update: Multi-Protocol Support using the Round-Robin algorithm
+## Breaking Down the Update: Multi-Protocol Support using the Round-Robin algorithm
 
 The decision to diversify protocol support stems from the need to address potential disruptions that may occur with the messaging protocols. By incorporating multiple protocols such as AMQPS (Advanced Message Queuing Protocol), FTP (File Transfer Protocol), and SMTP (Simple Mail Transfer Protocol) into the gateway client framework, SMSWithoutBorders is proactively mitigating the risk of message delivery interruptions. Gateway clients can now automatically switch between protocols in case of failures. The Gateway clients publish the data for which protocols are available for use in specific regions. The data is publicly available on the [ SMSWithoutBorders resilience dashboard](https://telemetry.smswithoutborders.com/)
 
-### The Role of Gateway Clients in the Context of Resilience
+## The Role of Gateway Clients in the Context of Resilience
 
 Gateway clients serve as the key component in facilitating the seamless transfer of messages from SMS to online platforms. Their ability to adapt to varying network conditions and protocol blockages is crucial for ensuring uninterrupted communication flow. With the introduction of multi-protocol support, gateway clients are poised to become even more resilient and reliableg in their message-forwarding capabilities.
 
