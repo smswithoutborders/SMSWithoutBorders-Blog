@@ -14,7 +14,7 @@ At SMSWithoutBorders, we're constantly working to improve how users stay connect
 
 ## 📩 Replies for Bridges: Receive Responses Even Offline
 
-One of the greatest challenges of offline communication is knowing if the recipient has responded. We introduced **[bridges](https://blog.smswithoutborders.com/posts/Bridges)** in a previous update, which enables users to communicate without saving their accounts; but are given primary aliases which act as their default RelaySMS accounts. The new feature **Replies for Bridges**, enables users who send messages through **Bridges** to now receive replies directly via SMS.
+One of the greatest challenges of offline communication is knowing if the recipient has responded. We introduced **[the Bridge feature](https://blog.smswithoutborders.com/posts/Bridges)** in a previous update, which enables users to communicate without saving their accounts, but are given primary aliases which act as their default RelaySMS accounts. The new feature, **Replies for Bridges**, enables users who send messages through **Bridges** to now receive replies directly via SMS.
 
 ### Here’s how it works:
 
@@ -34,8 +34,8 @@ We understand how crucial it is to know if your message was successfully sent, a
 - 📩 If your message is successfully published to the intended platform, you will get a **confirmation SMS**.
 - ❌ If the message **fails**, you will be notified so you can take action.
 
-> **Important to Note:** The delivery report status is not encrypted and does not contain any sensitive information. This feature works only for publishing with saved platforms and has not been activated for Bridges yet.
+> **Important to Note:** The delivery report status is not encrypted and does not contain any sensitive information. This feature works only for publishing with saved platforms.
 
 With these updates, **RelaySMS continues ensuring users can send and receive messages even during internet shutdowns.** Stay connected, no matter what.
 
-📢 [Try out ](https://apps.apple.com/us/app/relaysms/id6630382970) these new features today! Coming soon to Androids
+📢 [Try out](https://apps.apple.com/us/app/relaysms/id6630382970) these new features today! Coming soon to Androids,
