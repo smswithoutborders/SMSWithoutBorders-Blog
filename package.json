@@ -9,6 +9,7 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@ant-design/icons": "~5.6.1",
 		"classnames": "^2.5.1",
 		"date-fns": "^3.6.0",
 		"gray-matter": "^4.0.3",

@@ -5,7 +5,7 @@ coverImage: "/icon.png"
 date: "2024-06-28"
 author:
   name: "Promise Fru"
-  picture: "/anon-avatar.jpeg"
+  picture: "/anon-avatar.svg"
 ogImage:
   url: "/icon.png"
 ---
