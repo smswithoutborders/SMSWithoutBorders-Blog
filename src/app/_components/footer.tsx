@@ -7,7 +7,7 @@ export function Footer() {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="border-t text-white border-neutral-200 bg-indigo-950 justify-between items-center py-5">
+		<footer className="border-t text-white border-neutral-200 bg-gray-900 justify-between items-center py-5">
 			<Container>
 				<div className="flex flex-col md:flex-row justify-between items-center md:px-4">
 					<Logo src="/icon.png" alt="SMSWithoutBorders Logo" name="SMSWithoutBorders" url="/" />

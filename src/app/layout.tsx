@@ -1,13 +1,17 @@
 import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Unbounded } from "next/font/google";
 import Navbar from "@/app/_components/navbar";
 import Providers from "./_components/ProgressBarProvider";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const unbounded = Unbounded({
+	subsets: ["latin"],
+	variable: "--font-unbounded"
+});
 
 const baseURL = process.env.BASE_URL || "http://localhost:3000";
 
@@ -41,7 +45,7 @@ export default function RootLayout({
 				<meta name="theme-color" content="#000" />
 				<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 			</head>
-			<body className={inter.className}>
+			<body className={`${inter.className} ${unbounded.variable}`}>
 				<Providers>
 					<Navbar />
 					<div className="min-h-screen bg-neutral-100">{children}</div>
