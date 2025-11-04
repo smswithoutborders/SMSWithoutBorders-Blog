@@ -5,7 +5,7 @@ coverImage: "/icon.png"
 date: "2024-07-31"
 author:
   name: "Aysha Musa"
-  picture: "/anon-avatar.jpeg"
+  picture: "/anon-avatar.svg"
 ogImage:
   url: "/icon.png"
 ---

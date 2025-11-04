@@ -16,11 +16,11 @@ type Props = {
 export function PostPreview({ title, date, excerpt, author, slug, content }: Props) {
 	return (
 		<div className="border border-neutral-300 rounded-lg bg-white py-20 px-5 md:px-24 gap-y-5 mb-20">
-			<h1 className="text-2xl md:text-3xl mb-3 mx-4 text-center">
+			<h3 className="text-2xl md:text-2xl mb-3 mx-4 text-center">
 				<Link as={`/posts/${slug}`} href="/posts/[slug]" className="hover:underline font-semibold">
 					{title}
 				</Link>
-			</h1>
+			</h3>
 			<div className="text-base text-gray-700 text-center mb-4">
 				<DateFormatter dateString={date} />
 			</div>

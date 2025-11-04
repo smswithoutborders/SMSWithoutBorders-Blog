@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Container from "@/app/_components/container";
 import Logo from "./logo";
 import { FACEBOOK_URL, GITHUB_URL, X_URL, LINKEDIN_URL } from "@/lib/constants";
 import { FaFacebook, FaXTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
@@ -15,7 +14,7 @@ export function Navbar() {
 
 	return (
 		<div className="border-b text-black border-neutral-300 bg-white w-full z-10 py-4 fixed top-0">
-			<Container>
+			<div className="px-5">
 				<div className="flex justify-between items-center">
 					<Logo
 						src="/icon.png"
@@ -85,7 +84,7 @@ export function Navbar() {
 						</a>
 					</div>
 				</div>
-			</Container>
+			</div>
 			<div
 				className={`md:hidden ${isMenuOpen ? "block" : "hidden"} mt-5 px-4 py-2 rounded-lg shadow-md`}
 			>
