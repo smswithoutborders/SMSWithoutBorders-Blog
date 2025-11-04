@@ -18,7 +18,7 @@ RelaySMS now lets you share visuals that speak louder than words, even when you�
 
 #### How it works technically
 
-So SMS, as we know it wasn’t built for this. A single text only carries 160 bytes, and that’s nothing compared to even a tiny image. So our team rebuilt how SMS handles big data.
+So SMS, as we know it wasn’t built for this. A single text only carries 160 characters, and that’s nothing compared to even a tiny image. So our team rebuilt how SMS handles big data.
 Now, when you send a photo:
 
 RelaySMS compresses and resizes it, keeping it clear enough to see but light enough to move.
