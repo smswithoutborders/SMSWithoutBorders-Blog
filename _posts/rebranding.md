@@ -1,7 +1,6 @@
 ---
 title: "Rebranding"
 excerpt: "SMSWithoutBorders itself is becoming the umbrella project encompassing RelaySMS and other messaging tools. The core functionality remains the same, but users can expect a new name, enhanced security features, and a focus on future growth under the SMSWithoutBorders project."
-coverImage: "/icon.png"
 date: "2024-06-27"
 author:
   name: "Aysha Musa"

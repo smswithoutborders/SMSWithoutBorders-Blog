@@ -1,7 +1,6 @@
 ---
 title: "Introducing the RelaySMS Desktop Application"
 excerpt: "We’re excited to announce the launch of the RelaySMS Desktop Application, a standalone app designed to bring offline to online messaging to your desktop."
-coverImage: "/icon.png"
 date: "2024-12-10"
 author:
   name: "Aysha Musa"

@@ -4,7 +4,7 @@ import ReadTime from "./read-time";
 
 type Props = {
 	title: string;
-	coverImage: string;
+	coverImage?: string;
 	date: string;
 	content: string;
 };

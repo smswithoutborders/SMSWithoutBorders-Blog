@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Logo from "./logo";
-import { FACEBOOK_URL, GITHUB_URL, X_URL, LINKEDIN_URL } from "@/lib/constants";
-import { FaFacebook, FaXTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+import { GITHUB_URL, X_URL, LINKEDIN_URL } from "@/lib/constants";
+import { FaXTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export function Navbar() {
@@ -51,14 +51,6 @@ export function Navbar() {
 							<FaEnvelope size={30} className="rounded bg-white p-1" />
 						</a>
 						<a
-							href={FACEBOOK_URL}
-							className="text-gray-700 hover:text-blue-500 transition duration-300"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<FaFacebook size={30} className="rounded-full bg-white p-1" />
-						</a>
-						<a
 							href={X_URL}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -105,14 +97,6 @@ export function Navbar() {
 						rel="noopener noreferrer"
 					>
 						<FaEnvelope size={30} className="rounded p-1" />
-					</a>
-					<a
-						href={FACEBOOK_URL}
-						className="text-gray-700 hover:text-blue-500 transition duration-300"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<FaFacebook size={30} className="rounded-full p-1" />
 					</a>
 					<a
 						href={X_URL}

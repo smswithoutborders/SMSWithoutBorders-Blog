@@ -8,7 +8,8 @@ import { PostHeader } from "@/app/_components/post-header";
 import Avatar from "@/app/_components/avatar";
 
 export default async function Post({ params }: Params) {
-	const releases = getReleaseBySlug(params.slug);
+	const { slug } = await params;
+	const releases = getReleaseBySlug(slug);
 
 	if (!releases) {
 		return notFound();
@@ -30,7 +31,7 @@ export default async function Post({ params }: Params) {
 						<PostBody content={content} />
 					</article>
 					<div className="mt-10">
-						<Avatar name={releases.author.name} picture={releases.author.picture} />
+						<Avatar author={releases.author} />
 					</div>
 				</div>
 			</Container>
@@ -39,13 +40,14 @@ export default async function Post({ params }: Params) {
 }
 
 type Params = {
-	params: {
+	params: Promise<{
 		slug: string;
-	};
+	}>;
 };
 
-export function generateMetadata({ params }: Params): Metadata {
-	const releases = getReleaseBySlug(params.slug);
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+	const { slug } = await params;
+	const releases = getReleaseBySlug(slug);
 
 	if (!releases) {
 		return notFound();
@@ -61,7 +63,9 @@ export function generateMetadata({ params }: Params): Metadata {
 			description: releases.excerpt,
 			type: "article",
 			publishedTime: releases.date,
-			authors: [releases.author.name],
+			authors: Array.isArray(releases.author)
+				? releases.author.map((author) => author.name)
+				: [releases.author.name],
 			images: [releases.ogImage.url]
 		}
 	};

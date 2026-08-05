@@ -1,7 +1,6 @@
 ---
 title: "Sending Images Without Internet? Yeah, That’s a Thing Now."
 excerpt: "Internet down? Doesn’t matter. RelaySMS just leveled up. You can now send images over SMS fully encrypted, no Wi-Fi, no internet connection necessary"
-coverImage: "/icon.png"
 date: "2025-10-31"
 author:
   name: "Aysha Musa"

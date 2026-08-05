@@ -1,4 +1,5 @@
-import { type Author } from "@/interfaces/author";
+import { type AuthorLike } from "@/interfaces/author";
+import Image from "next/image";
 import Link from "next/link";
 import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
@@ -8,12 +9,13 @@ type Props = {
 	title: string;
 	date: string;
 	excerpt: string;
-	author: Author;
+	author: AuthorLike;
 	slug: string;
 	content: string;
+	coverImage?: string;
 };
 
-export function PostPreview({ title, date, excerpt, author, slug, content }: Props) {
+export function PostPreview({ title, date, excerpt, author, slug, content, coverImage }: Props) {
 	return (
 		<div className="border border-neutral-300 rounded-lg bg-white py-20 px-5 md:px-24 gap-y-5 mb-20">
 			<h3 className="text-2xl md:text-2xl mb-3 mx-4 text-center">
@@ -24,7 +26,19 @@ export function PostPreview({ title, date, excerpt, author, slug, content }: Pro
 			<div className="text-base text-gray-700 text-center mb-4">
 				<DateFormatter dateString={date} />
 			</div>
-			<Avatar name={author.name} picture={author.picture} />
+			{coverImage ? (
+				<div className="mb-6 overflow-hidden rounded-lg">
+					<Image
+						src={coverImage}
+						alt={title}
+						width={1200}
+						height={675}
+						className="h-full w-full object-cover"
+					/>
+				</div>
+			) : null}
+
+			<Avatar author={author} />
 
 			<p className="text-base leading-relaxed my-4 font-light">{excerpt}</p>
 			<div className="flex justify-between">
@@ -43,7 +57,7 @@ export function PostPreview({ title, date, excerpt, author, slug, content }: Pro
 	);
 }
 
-export function ReleasePreview({ title, date, excerpt, author, slug, content }: Props) {
+export function ReleasePreview({ title, date, excerpt, author, slug, content, coverImage }: Props) {
 	return (
 		<div className="border border-neutral-300 rounded-lg bg-white py-20 px-5 md:px-24 gap-y-5 mb-20">
 			<h1 className="text-2xl md:text-3xl mb-3 mx-4 text-center">
@@ -58,7 +72,19 @@ export function ReleasePreview({ title, date, excerpt, author, slug, content }: 
 			<div className="text-base text-gray-700 text-center mb-4">
 				<DateFormatter dateString={date} />
 			</div>
-			<Avatar name={author.name} picture={author.picture} />
+			{coverImage ? (
+				<div className="mb-6 overflow-hidden rounded-lg">
+					<Image
+						src={coverImage}
+						alt={title}
+						width={1200}
+						height={675}
+						className="h-full w-full object-cover"
+					/>
+				</div>
+			) : null}
+
+			<Avatar author={author} />
 
 			<p className="text-base leading-relaxed my-4 font-light">{excerpt}</p>
 			<div className="flex justify-between">

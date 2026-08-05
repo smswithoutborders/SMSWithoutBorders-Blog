@@ -1,7 +1,6 @@
 ---
 title: "SMSWithoutborders Telemetry Dashboard"
 excerpt: "The SMSwithoutBorders Telemetry Dashboard sheds light on user behavior through key metrics like sign-ups, active users, and user location. This data empowers the team to optimize the app, ensuring a secure and seamless messaging experience for a global audience."
-coverImage: "/icon.png"
 date: "2024-04-26"
 author:
   name: "Aysha Musa"

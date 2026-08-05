@@ -1,7 +1,6 @@
 ---
 title: "RelaySMS Expands User Control with Device ID Registration"
 excerpt: "RelaySMS (swob app) introduces a powerful new feature: Device ID Registration with RelaySMS Vault! This innovative approach gives you more control over your offline messaging experience."
-coverImage: "/icon.png"
 date: "2024-07-01"
 author:
   name: "Aysha Musa"

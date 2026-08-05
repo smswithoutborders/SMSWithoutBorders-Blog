@@ -1,7 +1,6 @@
 ---
 title: "SMSWithoutBorders: Keeping You Secure - Results of a Penetration Test"
 excerpt: "We're committed to keeping your communications safe. That's why we had a rigorous penetration test conducted by Radically Open Security (ROS). While we found and fixed a few vulnerabilities, the good news is that your data is secure with RelaySMS"
-coverImage: "/icon.png"
 date: "2024-07-31"
 author:
   name: "Aysha Musa"
