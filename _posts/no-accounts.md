@@ -25,11 +25,12 @@ This is a big one for us. Not having an account means there's nothing stored on 
 #### Shorter messages, lower SMS costs
 
 We've made the messages RelaySMS sends significantly shorter. This means each message uses fewer SMS credits to send, which adds up especially if you're sending regularly or if SMS costs are a concern where you are.
-Save your platforms and restore them anytime
+
+#### Save your platforms and restore them anytime
+
 You can now connect your platforms; Gmail, Bluesky, Telegram, or RelaySMS Mail and back them up so you never lose them.
 
-#### Here's why that matters:
-
+Here's why that matters:
 Let's say you delete your saved platforms or something happens to your app. In the past that could mean losing everything and having to start over. Now you can back up your saved platforms, keep the restore key somewhere safe, and pick up right where you left off whenever you need to.
 It takes about a minute to restore. So even if you haven't touched the app in months, you can come back during a shutdown and be ready to send straight away.
 
