@@ -1,25 +1,25 @@
-name: Deploy SMSWithoutBorders Blog on Server (production)
+name: Deploy SMSWithoutBorders Blog on Server (preview)
 
 on:
   push:
     branches:
-      - main
+      - preview
 
 permissions:
   contents: read
 
 concurrency:
-  group: production-deploy
-  cancel-in-progress: false
+  group: preview-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      DEPLOY_URL: https://blog.smswithoutborders.com
+      DEPLOY_URL: https://preview-6.relaysms.afkanerd.de
     environment:
-      name: production
+      name: preview
       url: ${{ env.DEPLOY_URL }}
     steps:
       - name: Checkout repository
@@ -48,8 +48,8 @@ jobs:
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           source: "./out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
@@ -59,11 +59,11 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
-            echo "::group::Deploying production build"
+            echo "::group::Deploying preview build"
             ${{ secrets.BUILD_CMD }}
             echo "Deploy command finished successfully."
             echo "::endgroup::"
