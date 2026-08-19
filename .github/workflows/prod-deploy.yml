@@ -44,6 +44,16 @@ jobs:
       - name: Build application
         run: pnpm build
 
+      - name: Clean remote target directory
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: |
+            set -e
+            find "${{ secrets.BUILD_PATH }}" -mindepth 1 -delete
+
       - name: Copy build artifacts to server
         uses: appleboy/scp-action@v1
         with:
@@ -53,7 +63,7 @@ jobs:
           source: "./out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
-          rm: true
+          rm: false
 
       - name: Run remote deploy script
         uses: appleboy/ssh-action@v1
