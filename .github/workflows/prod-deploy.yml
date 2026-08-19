@@ -16,11 +16,9 @@ jobs:
   deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    env:
-      DEPLOY_URL: https://blog.smswithoutborders.com
     environment:
       name: production
-      url: ${{ env.DEPLOY_URL }}
+      url: https://blog.smswithoutborders.com
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -36,7 +34,7 @@ jobs:
           corepack prepare pnpm --activate
 
       - name: Create .env.local file
-        run: echo "BASE_URL=${{ env.DEPLOY_URL }}" > .env.local
+        run: echo "BASE_URL=https://blog.smswithoutborders.com" > .env.local
 
       - name: Install dependencies
         run: pnpm install --no-lockfile
