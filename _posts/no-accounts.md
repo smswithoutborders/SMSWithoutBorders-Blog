@@ -20,7 +20,7 @@ If you've used RelaySMS before, you know the drill internet goes down, you still
 #### No more accounts
 
 You no longer need to create an account to use RelaySMS. Just download the app and you're ready to go.
-This is a big one for us. Not having an account means there's nothing stored on our servers that's linked to you which is better for your privacy. But honestly, it's also just simpler. No sign-up, no verification codes, no forgotten passwords. You open the app and it works.
+This is a big one for us. Not having an account means there's nothing stored on our servers that's linked to you which is better for your privacy. But honestly, it's also just simpler. No sign-up, no login, no verification codes, no forgotten passwords. You open the app and it works.
 
 #### Shorter messages, lower SMS costs
 
