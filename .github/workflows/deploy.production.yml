@@ -26,28 +26,27 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Enable Corepack and activate pnpm
         run: |
           corepack enable
           corepack prepare pnpm --activate
 
-      - name: Create .env.local file
-        run: echo "BASE_URL=https://blog.smswithoutborders.com" > .env.local
-
       - name: Install dependencies
         run: pnpm install --no-lockfile
 
       - name: Build application
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
         run: pnpm build
 
       - name: Clean remote target directory
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
             find "${{ secrets.BUILD_PATH }}" -mindepth 1 -delete
@@ -56,8 +55,8 @@ jobs:
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           source: "./out/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
@@ -67,8 +66,8 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
             echo "::group::Deploying production build"
