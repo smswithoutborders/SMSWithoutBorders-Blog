@@ -1,7 +1,6 @@
 ---
 title: "RelaySMS Bridges"
 excerpt: "Before now RelaySMS required online setup processes, including account creation and saving platforms. RelaySMS Bridges breaks these barriers."
-coverImage: "/icon.png"
 date: "2024-11-14"
 author:
   name: "Aysha Musa"

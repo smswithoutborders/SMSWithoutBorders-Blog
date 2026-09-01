@@ -1,28 +1,59 @@
+import { type AuthorLike } from "@/interfaces/author";
 import Image from "next/image";
 
 type Props = {
-	name: string;
-	picture: string;
+	author: AuthorLike;
 };
 
-const Avatar = ({ name, picture }: Props) => {
+function formatAuthors(author: AuthorLike) {
+	if (Array.isArray(author)) {
+		if (author.length === 0) {
+			return "";
+		}
+		if (author.length === 1) {
+			return author[0].name;
+		}
+		if (author.length === 2) {
+			return `${author[0].name} and ${author[1].name}`;
+		}
+		return `${author
+			.slice(0, -1)
+			.map((item) => item.name)
+			.join(", ")} and ${author[author.length - 1].name}`;
+	}
+
+	return author.name;
+}
+
+const Avatar = ({ author }: Props) => {
+	const authors = Array.isArray(author) ? author : [author];
+	const displayName = formatAuthors(author);
+	const primaryAuthor = authors[0];
+
 	return (
 		<div className="flex items-center">
-			<div className="h-12 w-12 rounded-full mr-4 bg-gray-200 align-center">
+			<div className="mr-4 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-gray-200">
 				<Image
-					src={picture}
-					alt={name}
+					src={primaryAuthor.picture}
+					alt={displayName}
 					width={20}
 					height={20}
 					style={{
-						margin: "auto",
-						marginTop: 12,
-						opacity: "40%"
+						opacity: "40%",
+						width: "20px",
+						height: "20px"
 					}}
 					className="rounded-full"
 				/>
 			</div>
-			<h6 className="text-sm text-gray-700 font-bold">{name}</h6>
+			<h6 className="text-sm text-gray-700 font-medium">
+				{displayName.split(" and ").map((name, index, parts) => (
+					<span key={name}>
+						{name}
+						{index < parts.length - 1 ? <span className="mx-1 text-gray-400">and</span> : null}
+					</span>
+				))}
+			</h6>
 		</div>
 	);
 };

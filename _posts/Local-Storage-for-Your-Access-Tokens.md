@@ -1,7 +1,6 @@
 ---
 title: "Local Storage for Your Access Tokens"
 excerpt: "Storing your tokens locally means reducing your reliance on our servers and giving you total control of your stored tokens. This is especially valuable for users who value privacy and control over their data."
-coverImage: "/icon.png"
 date: "2025-06-05"
 author:
   name: "Aysha Musa"

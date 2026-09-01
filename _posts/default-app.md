@@ -1,7 +1,6 @@
 ---
 title: "RelaySMS Can Now Be Your Default SMS App"
 excerpt: "When you set RelaySMS as your default SMS app, all your regular SMS messages move right into your RelaySMS app. You’ll see every text, every conversation, all inside one familiar inbox."
-coverImage: "/icon.png"
 date: "2025-10-30"
 author:
   name: "Vanessa Christopher"

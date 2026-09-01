@@ -1,7 +1,6 @@
 ---
 title: "New Alpha Release: Vault 0.1.0"
 excerpt: "SMSWithoutBorders Vault 0.1.0 is Now Available in Alpha Release! The Vault is a technology developed by the SMSWithoutBorders team to secure users' access tokens and facilitate the secure usage of these tokens for publishing users' messages."
-coverImage: "/icon.png"
 date: "2024-06-28"
 author:
   name: "Promise Fru"

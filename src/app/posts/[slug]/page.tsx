@@ -8,7 +8,8 @@ import { PostHeader } from "@/app/_components/post-header";
 import Avatar from "@/app/_components/avatar";
 
 export default async function Post({ params }: Params) {
-	const post = getPostBySlug(params.slug);
+	const { slug } = await params;
+	const post = getPostBySlug(slug);
 
 	if (!post) {
 		return notFound();
@@ -30,7 +31,7 @@ export default async function Post({ params }: Params) {
 						<PostBody content={content} />
 					</article>
 					<div className="mt-10">
-						<Avatar name={post.author.name} picture={post.author.picture} />
+						<Avatar author={post.author} />
 					</div>
 				</div>
 			</Container>
@@ -39,13 +40,14 @@ export default async function Post({ params }: Params) {
 }
 
 type Params = {
-	params: {
+	params: Promise<{
 		slug: string;
-	};
+	}>;
 };
 
-export function generateMetadata({ params }: Params): Metadata {
-	const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+	const { slug } = await params;
+	const post = getPostBySlug(slug);
 
 	if (!post) {
 		return notFound();
@@ -61,7 +63,9 @@ export function generateMetadata({ params }: Params): Metadata {
 			description: post.excerpt,
 			type: "article",
 			publishedTime: post.date,
-			authors: [post.author.name],
+			authors: Array.isArray(post.author)
+				? post.author.map((author) => author.name)
+				: [post.author.name],
 			images: [post.ogImage.url]
 		}
 	};

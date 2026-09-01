@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter, Unbounded } from "next/font/google";
 import Navbar from "@/app/_components/navbar";
 import Providers from "./_components/ProgressBarProvider";
+import SubscribeFloatingButton from "./_components/subscribe-floating-button";
 
 import "./globals.css";
 
@@ -49,6 +50,7 @@ export default function RootLayout({
 				<Providers>
 					<Navbar />
 					<div className="min-h-screen bg-neutral-100">{children}</div>
+					<SubscribeFloatingButton />
 					<Footer />
 				</Providers>
 			</body>

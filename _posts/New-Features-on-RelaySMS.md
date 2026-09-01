@@ -1,7 +1,6 @@
 ---
 title: "New Features on RelaySMS"
 excerpt: "At SMSWithoutBorders, we're constantly working to improve how users stay connected even without internet access."
-coverImage: "/icon.png"
 date: "2025-03-14"
 author:
   name: "Aysha Musa"

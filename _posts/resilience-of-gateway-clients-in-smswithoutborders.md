@@ -1,7 +1,6 @@
 ---
 title: "Resilience Of Gateway Clients In SMSWithoutBorders"
 excerpt: "SMSWithoutBorders is pleased to announce a significant advancement in message-forwarding functionalities for its gateway clients"
-coverImage: "/icon.png"
 date: "2024-04-16"
 author:
   name: "Aysha Musa"
